@@ -43,3 +43,18 @@
     width: 100%;
     justify-content: space-around;
 }
+
+.buttonCancel{
+    width: 7rem;
+    height: 20px;
+    background-color: #F45459;
+    border: none;
+    border-radius: 0.2rem;
+}
+.buttonSubmit{
+    width: 7rem;
+    height: 20px;
+    background-color: #84F78A;
+    border: none;
+    border-radius: 0.2rem;
+}

@@ -80,8 +80,8 @@ export const Modal: FC<IModal> = ({ handleCloseModal }) => {
             />
           </div>
           <div className={styles.buttonCard}>
-            <button onClick={handleCloseModal}>Cancelar</button>
-            <button type="submit">
+            <button className={styles.buttonCancel} onClick={handleCloseModal}>Cancelar</button>
+            <button className={styles.buttonSubmit} type="submit">
               {tareaActiva ? "Editar tarea" : "Crear tarea"}
             </button>
           </div>

@@ -1,10 +1,11 @@
 .containerHeader{
     width: 100vw;
     height: 10vh;
-    background-color: gray;
+    background-color: #BEE3DB;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .containerTitleHeader{
     margin-left: 4vw;

@@ -7,17 +7,13 @@ import { ITarea } from "../../../types/ITarea";
 import { useTareas } from "../../../hooks/useTareas";
 
 export const ListTareas = () => {
+  const setTareaActiva = tareaStore((state) => state.setTareaActiva);
 
-  const setTareaActiva = tareaStore((state)=>state.setTareaActiva);
-  
-  const {getTareas, tareas} = useTareas()
-
- 
+  const { getTareas, tareas } = useTareas();
 
   useEffect(() => {
     getTareas();
   }, []);
-  
 
   const [openModalTarea, setOpenModalTarea] = useState(false);
 
@@ -36,6 +32,7 @@ export const ListTareas = () => {
         <div className={styles.containerTitleAndButton}>
           <h2>Lista de tareas</h2>
           <button
+            className={styles.containerButton}
             onClick={() => {
               setOpenModalTarea(true);
             }}
@@ -55,7 +52,7 @@ export const ListTareas = () => {
           )}
         </div>
       </div>
-      {openModalTarea && <Modal handleCloseModal={handleCloseModal}/>}
+      {openModalTarea && <Modal handleCloseModal={handleCloseModal} />}
     </>
   );
 };

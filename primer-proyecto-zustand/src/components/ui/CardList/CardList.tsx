@@ -7,7 +7,6 @@ type ICardList ={
     tarea: ITarea;
     handleOpenModalEdit: (tarea: ITarea)=> void
 
-
 };
 
 export const CardList: FC<ICardList> = ({tarea, handleOpenModalEdit}) => {
@@ -32,8 +31,8 @@ export const CardList: FC<ICardList> = ({tarea, handleOpenModalEdit}) => {
             </p>
         </div>
         <div className={styles.actionCard}>
-            <button onClick={eliminarTareaById}>Eliminar</button>
-            <button onClick={editarTarea}>Editar</button>
+            <button className={styles.buttonEdit} onClick={editarTarea}>Editar</button>
+            <button className={styles.buttonDelete} onClick={eliminarTareaById}>Eliminar</button>
         </div>
     </div>
   )

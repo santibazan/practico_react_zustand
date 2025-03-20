@@ -2,15 +2,27 @@
   "tareas": [
     {
       "id": "123",
-      "titulo": "Titulo1",
-      "descripcion": "Descripcion1",
+      "titulo": "Titulo 1",
+      "descripcion": "Descripcion 1",
       "fechaLimite": "20"
     },
     {
       "id": "456",
-      "titulo": "Titulo2",
-      "descripcion": "Descripcion2",
+      "titulo": "Titulo 2",
+      "descripcion": "Descripcion 2",
       "fechaLimite": "20"
+    },
+    {
+      "id": "789",
+      "titulo": "Titulo 3",
+      "descripcion": "Descripcion 3",
+      "fechaLimite": "20"
+    },
+    {
+      "id": "Thu Mar 20 2025",
+      "titulo": "laboratorio",
+      "descripcion": "tarea de laboratorio",
+      "fechaLimite": "2025-03-21"
     }
   ]
 }
